@@ -1,0 +1,14 @@
+flask>=2.0.3
+authlib>=1.0
+requests>=2.27.1
+annotated-types==0.6.0
+anyio==4.2.0
+blinker==1.7.0
+certifi==2024.2.2
+click==8.1.7
+fastapi==0.109.2
+influxdb_client==1.40.0
+
+
+
+
