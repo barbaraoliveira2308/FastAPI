@@ -4,10 +4,7 @@ from influxdb_client.client.write_api import SYNCHRONOUS
 import json
 
 
-# Inicialize o cliente InfluxDB
-token = "zXEZuTeOyF-J46ppqJpxQckwvKuRmi7DHqFZsh-KXRVrnTJ9OYKPi9dEDSb-bxfaY1v3IIwXZvziCprXo2_UYw=="
-org = "Evoleo"
-bucket = "Bucket02"
+
 
 client = InfluxDBClient(url="http://localhost:8086", token=token, org=org)
 write_api = client.write_api(write_options=SYNCHRONOUS)
