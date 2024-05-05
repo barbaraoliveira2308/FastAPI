@@ -6,11 +6,8 @@ from influxdb_client import InfluxDBClient
 load_dotenv(dotenv_path="Backend\\Generator\\Influx_variaveis.env")
 
  #Configuração do cliente InfluxDB
-url = "http://localhost:8086"  # Substitua pela URL correta
-influx_token = "zXEZuTeOyF-J46ppqJpxQckwvKuRmi7DHqFZsh-KXRVrnTJ9OYKPi9dEDSb-bxfaY1v3IIwXZvziCprXo2_UYw=="  # Substitua pelo token correto
-org = "Evoleo"  # Substitua pela organização correta
 
-client = InfluxDBClient(url=url, token=influx_token, org=org)
+
 
 def fetch_data_from_db(client, query, org):
     try:
