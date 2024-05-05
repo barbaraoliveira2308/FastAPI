@@ -40,12 +40,7 @@ function App() {
 
 function AppWithAuth() {
   return (
-    <Auth0Provider
-      domain="dev-flpjat1olkfrxgne.eu.auth0.com"
-      clientId="wMGvU0ZhMRKOUj4ThJ6sFpAHIWQdMNjn"
-      redirectUri={window.location.origin}
-    
-    >
+    <Auth0Provider>
       <App />
     </Auth0Provider>
   );
