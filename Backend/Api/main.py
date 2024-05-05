@@ -19,7 +19,7 @@ app = FastAPI()
 load_dotenv(dotenv_path= 'Variaveis.env')
 
 
-oauth2_scheme = OAuth2AuthorizationCodeBearer(
+oauth2_scheme = (
     tokenUrl=
     authorizationUrl=,
 )
