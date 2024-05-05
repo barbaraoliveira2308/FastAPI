@@ -8,7 +8,7 @@ from typing import List
 from dotenv import load_dotenv
 import os
 import sys
-sys.path.append(r'C:\Users\barbara.oliveira\OneDrive - Evoleo Technologies, Lda\Desktop\Projeto API\Backend')
+
 
 
 
