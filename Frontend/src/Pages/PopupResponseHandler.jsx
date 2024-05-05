@@ -7,7 +7,7 @@ const PopupResponseHandler = () => {
         // Certifique-se de incluir qualquer lógica adicional necessária
         // para processar a resposta do popup, se necessário
         const webAuth = new auth0.WebAuth({
-            domain: 'dev-flpjat1olkfrxgne.eu.auth0.com',
+            domain: '',
             clientID: 'wMGvU0ZhMRKOUj4ThJ6sFpAHIWQdMNjn'
         });
 
