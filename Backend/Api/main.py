@@ -20,8 +20,8 @@ load_dotenv(dotenv_path= 'Variaveis.env')
 
 
 oauth2_scheme = OAuth2AuthorizationCodeBearer(
-    tokenUrl="https://dev-flpjat1olkfrxgne.eu.auth0.com/oauth/token",
-    authorizationUrl='https://dev-flpjat1olkfrxgne.eu.auth0.com/authorize',
+    tokenUrl=
+    authorizationUrl=,
 )
 
 #variaveis auth
@@ -32,9 +32,7 @@ auth0_client_secret_key = os.getenv("AUTH0_CLIENT_SECRET")
 auth0_app_secret_key = os.getenv("APP_SECRET_KEY")
 
 
-token_url = "https://dev-flpjat1olkfrxgne.eu.auth0.com/oauth/token"
-code='{code}&client_id=UjIKdcK2XwPRyUINqLBipHOWPOhGMUnc&client_secret=nnHfwxwSJ_CfFu9JjteE2QQZ48ghhQxSjQwCVvNMiK-26O8Xaw8psTXssIMR8Eko&grant_type=authorization_code&redirect_uri=https://dev-flpjat1olkfrxgne.eu.auth0.com/authorize'
-redirect_uri = "https://dev-flpjat1olkfrxgne.eu.auth0.com/authorize"
+
 
 
 class SensorData(BaseModel):
@@ -47,15 +45,13 @@ class SensorData(BaseModel):
     incline_angle: float
 
 # Inicialize o cliente InfluxDB
-token = "zXEZuTeOyF-J46ppqJpxQckwvKuRmi7DHqFZsh-KXRVrnTJ9OYKPi9dEDSb-bxfaY1v3IIwXZvziCprXo2_UYw=="
-org = "Evoleo"
-bucket = "Bucket02"
-client = InfluxDBClient(url="http://localhost:8086", token=token, org=org)
-write_api = client.write_api(write_options=SYNCHRONOUS)
+token = ""
+org = ""
+bucket = ""
 
 
 
-token_request_url = f"{token_url}?code={code}&client_id={auth0_client_id}&client_secret={auth0_client_secret_key}&grant_type=authorization_code&redirect_uri={redirect_uri}"
+
 
 
 
